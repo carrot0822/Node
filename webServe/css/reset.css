@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置样式*/
+/*连接外部样式表都不会了*/
+body,div,dd,dt,dl,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	padding:0px; 
+	margin:0px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;}
+/*样式的内边距和外边距初始化 */
+ul,ol,li{ list-style:none;}
+
+a{
+	text-decoration:none;
+  	display:block;
+	color:#fff;
+}
+img{ border:none;display:block; }
+
+.clearfloat{
+ 	zoom:1;
+}
+.clerafloat:after{	
+ 	display:block;/*先设置为块级元素占据一行*/
+ 	clear:both;/*清除浮动后就不会对下面的造成影响了*/
+ 	content:"";/*下面是使得出现的块级元素消失*/
+ 	visibility:hidden;/*这应该是透明度的意思？*/
+ 	height:0;/*不占据高度 因为可能有默认的设定在这里*/
+}
+
+
+	
+

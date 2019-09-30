@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+
+.index-banner{
+	position:relative;
+	background:#999;	
+}
+
+.index-banner-bg{	
+	height:570px;
+	overflow:hidden;
+}
+
+.index-banner-bg img{	
+	margin:0 auto;
+}
+.index-banner-text{
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin-left:-388px;	
+}
+
+.text-logo{	
+	width:776px;
+	height:113px;
+	background:url("../images/text-logo.png")  no-repeat;
+}
+
+.text-info{	
+	margin-top:17px;
+	text-align:center;
+	color:#fff;
+}
+.line{	
+	display:inline-block;
+	width:40px;
+	border-top:1px solid #fff;
+	vertical-align:middle;
+}
+.b-text{	
+	margin:0 26px;
+}
+
+/*菜单部分*/
+
+.index-menu{	
+	position:relative;
+	border-top: 4px solid #f34949;
+}
+
+.menu-tips{	
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin-left:-78px;
+	width:156px;
+	height:75px;
+	text-align:center;
+	line-height:65px;
+	color:#fff;
+	background:#f34949;
+}
+
+.menu-tips:after{	
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	width:0px;
+	height:0px;
+	border-left:78px solid transparent; 
+	border-right: 78px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+.menu-list{	
+	margin-top:150px;
+	color:#555;
+	overflow:hidden;/*为什么超出隐藏*/
+}
+.menu-list ul{	
+	width:1160px;
+}
+/*这里Ul的宽度为什么是1160px 因为下面的li的宽度是520+60=580x2=1160 超过了限定的1100px 导致浮动的元素会被挤下去 上面的隐藏是为了隐藏多出的元素*/
+/*li的宽度 以及外边距*/
+.menu-item{	
+	float:left;
+	width:520px;
+	margin-right:60px;
+	margin-bottom:56px;
+	
+}
+
+.price{	
+	float:right;
+}
+.title{	
+	float:left;
+	width:230px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+	.title h4{	
+		color:#000;
+	}
+.line1{	
+	float:left;
+	margin-top:10px;
+	width:192px;
+	border-top:1px solid #e3e1e1;
+}
+.conment{	
+	margin-top:4px;
+	color:#b7b7b7;
+	font-size:12px;
+}
+/*小角落 有哪些需要在父元素设定样式 而又有哪些需要在本身设定样式*/
+.menu-load{	
+	margin:0 auto;
+	width:114px;
+	height:32px;
+	padding-left:16px;
+	border:1px solid #d7d5d5;
+	line-height:32px;
+	color:#b7b7b7;
+}b
+.icon{	
+	display:inline-block;/*行内块级？*/
+	width:11px;
+	height:7px;
+	margin-left:10px;
+	background:url("../images/icon.png") no-repeat;
+}
+
+/*开始写中间的东西了*/
+.panel{	
+	margin-top:200px;/*这种公共样式（大块元素）就要考虑跟上面的大块元素的margin大小来限定距离了*/
+	
+}
+/*底下的头部*/
+/*这里清除浮动失败了 为什么*/
+	.index-panel-header{
+		overflow:hidden;	
+		
+		
+	}
+	.index-panel-header h3{	
+		font-size:20px;
+		color:#3b3b3b;
+		font-weight:normal;
+		float:left;
+		margin-left:48pxb;
+		
+	}
+	.line2{
+		margin-top:12px;/*上面没有其他元素会以父元素为基准参照进行移动*/	
+		margin-left:18px;
+		float:left;
+		width:200px;
+		border-top:1px solid #e5e3e3;
+		
+	}
+	.btn-group{	
+		font-size:0px;
+		float:right;
+		
+	}
+		.btn{	
+			display:inline-block;/*这里设定会有一些不好的影响 该如何去除 设定某些元素时会有特定的影响 如何利用和消除*/
+			margin-left:11px;
+			width:8px;
+			height:9px;
+			background:#dedede;
+			border-radius:50%;/*这是啥？*/
+			
+		}
+		.btn-active{
+			background:#9b9b9b;
+		}
+/*身体部分了*/
+.index-pannel-body{	
+	margin-top:75px;
+}
+/*独立样式*/
+.index-food-list{	
+	overflow:hidden;/*为什么 话说这个功能我都忘了 明天的重要任务就是把这个调查清楚+复习+寻找新的仿照样式*/
+}
+.index-food-list ul{	
+	width:1160px;
+}
+.index-food-li{	
+	float:left;
+	width:230px;
+	margin-right:60px;/*为什么没摸到版边*/
+}
+.index-food-banner{	
+	margin-bottom:30px;/*这些bottom写出来的原因有哪些 他的针对对象又是哪些*/
+	width:230px;
+}
+.name{	
+	color:#555;
+	margin-bottom:10px;
+}
+.price1{
+	float:right;	
+}
+.star-bar{	
+	font-size:0px;
+}
+	/*星星没做出来..*/
+	.star{	
+		display:inline-block;
+		width:12px;
+		height:13px;
+		margin-right:5px;
+		background-image:url("../images/star.png");/*background background-image等一系列属性的区别是什么*/
+		background-repeat:no-repeat;
+		
+	}
+	.no-star{	
+		background-position:0 -12px;/*这又是什么属性*/
+	}
+/*第二个图片栏了*/
+.pics{	
+	height:300px;
+	overflow:hidden;/*图片超出隐藏*/
+	
+}
+/*单个设置浮动和宽度*/
+	.pic-col{
+		float:left;	
+		
+	}
+		pics-col-m{	
+			width:353px;
+			
+		}
+		pics-col-s{	
+			width:287px;
+			
+		}
+		pics-col-l{	
+			width:460px;
+		}
