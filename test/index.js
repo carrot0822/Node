@@ -82,3 +82,5 @@ function getNowFormatDate(){
     var currentDate = year + "-" + month + "-" + strDate + hour + ":" + minute + ":" +second
     return currentDate
 }
+
+12313232
