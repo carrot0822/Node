@@ -20,6 +20,7 @@ http.createServer((req,res) =>{
         case 'GET':
             let data = JSON.stringify(items);
             res.write(data);
+			console.log(data,'这应该就是接口？')
             res.end();
             break;
         case 'POST':
